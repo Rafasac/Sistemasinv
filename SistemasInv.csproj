@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DF5316C-9EA0-470F-A23F-72747AB7228B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemasInv</RootNamespace>
+    <AssemblyName>SistemasInv</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>vdlp.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activos\addAccesorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addAccesorio.Designer.cs">
+      <DependentUpon>addAccesorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addBocinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addBocinas.Designer.cs">
+      <DependentUpon>addBocinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addCamaras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addCamaras.Designer.cs">
+      <DependentUpon>addCamaras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addConsumibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addConsumibles.Designer.cs">
+      <DependentUpon>addConsumibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addDvr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addDvr.Designer.cs">
+      <DependentUpon>addDvr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addLaptop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addLaptop.Designer.cs">
+      <DependentUpon>addLaptop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addMovil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addMovil.Designer.cs">
+      <DependentUpon>addMovil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addPC.Designer.cs">
+      <DependentUpon>addPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addRedes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addRedes.Designer.cs">
+      <DependentUpon>addRedes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addRelojes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addRelojes.Designer.cs">
+      <DependentUpon>addRelojes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addTelefono.Designer.cs">
+      <DependentUpon>addTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\BajaActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\BajaActivo.Designer.cs">
+      <DependentUpon>BajaActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\DevolucionAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\DevolucionAS.Designer.cs">
+      <DependentUpon>DevolucionAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\modificarActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\modificarActivo.Designer.cs">
+      <DependentUpon>modificarActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado.Designer.cs">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activos\addImpresora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activos\addImpresora.Designer.cs">
+      <DependentUpon>addImpresora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Activo\DevolucionActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Activo\DevolucionActivos.Designer.cs">
+      <DependentUpon>DevolucionActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\AltaActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\AltaActivos.Designer.cs">
+      <DependentUpon>AltaActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Configuracion\Configuracion.cs" />
+    <Compile Include="Modulos\Configuracion\ConfiguracionSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Configuracion\ConfiguracionSistema.Designer.cs">
+      <DependentUpon>ConfiguracionSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ConsultaGeneralActivocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ConsultaGeneralActivocs.Designer.cs">
+      <DependentUpon>ConsultaGeneralActivocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Correos\Correos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Correos\Correos.Designer.cs">
+      <DependentUpon>Correos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Responsivas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Responsivas.Designer.cs">
+      <DependentUpon>Responsivas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Soporte\HistorialSoporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Soporte\HistorialSoporte.Designer.cs">
+      <DependentUpon>HistorialSoporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Soporte\TableroSoporteTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Soporte\TableroSoporteTecnico.Designer.cs">
+      <DependentUpon>TableroSoporteTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Usuarios\UsuarioActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Usuarios\UsuarioActivos.Designer.cs">
+      <DependentUpon>UsuarioActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Usuarios\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Usuarios\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\consultaEmpleadoResponsivaActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\consultaEmpleadoResponsivaActivo.Designer.cs">
+      <DependentUpon>consultaEmpleadoResponsivaActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL\Activos\TipoActivo.cs" />
+    <Compile Include="SQL\Conexion.cs" />
+    <Compile Include="SQL\ConsultaGeneralVP.cs" />
+    <Compile Include="SQL\ConsultarCorreo.cs" />
+    <Compile Include="SQL\ConsultarEmpleado.cs" />
+    <Compile Include="SQL\ConsultarEspecificaciones.cs" />
+    <Compile Include="SQL\ConsultarUltimaResponsiva.cs" />
+    <Compile Include="SQL\ConsultarUltimoVP.cs" />
+    <Compile Include="SQL\Correos\AgregarCorreo.cs" />
+    <Compile Include="SQL\CRUD.cs" />
+    <Compile Include="SQL\Inserts\AddActivos.cs" />
+    <Compile Include="SQL\Inserts\addAsignaciones.cs" />
+    <Compile Include="SQL\Inserts\AddDepartamento.cs" />
+    <Compile Include="SQL\Inserts\addPuesto.cs" />
+    <Compile Include="SQL\Inserts\AddResponsiva.cs" />
+    <Compile Include="SQL\Inserts\addUsuario.cs" />
+    <Compile Include="SQL\Login\Autorizacion.cs" />
+    <Compile Include="SQL\Usuarios\ConsultarDepartamento.cs" />
+    <Compile Include="SQL\Usuarios\ConsultarUltimoUsuario.cs" />
+    <Compile Include="SQL\Usuarios\UsuariosSQL.cs" />
+    <Compile Include="SQL\VerificarEstado.cs" />
+    <Compile Include="SQL\VerificarTabla.cs" />
+    <EmbeddedResource Include="Activos\addAccesorio.resx">
+      <DependentUpon>addAccesorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addBocinas.resx">
+      <DependentUpon>addBocinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addCamaras.resx">
+      <DependentUpon>addCamaras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addConsumibles.resx">
+      <DependentUpon>addConsumibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addDvr.resx">
+      <DependentUpon>addDvr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addLaptop.resx">
+      <DependentUpon>addLaptop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addMovil.resx">
+      <DependentUpon>addMovil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addPC.resx">
+      <DependentUpon>addPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addRedes.resx">
+      <DependentUpon>addRedes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addRelojes.resx">
+      <DependentUpon>addRelojes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addTelefono.resx">
+      <DependentUpon>addTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\BajaActivo.resx">
+      <DependentUpon>BajaActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\DevolucionAS.resx">
+      <DependentUpon>DevolucionAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\modificarActivo.resx">
+      <DependentUpon>modificarActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activos\addImpresora.resx">
+      <DependentUpon>addImpresora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Activo\DevolucionActivos.resx">
+      <DependentUpon>DevolucionActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\AltaActivos.resx">
+      <DependentUpon>AltaActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Configuracion\ConfiguracionSistema.resx">
+      <DependentUpon>ConfiguracionSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ConsultaGeneralActivocs.resx">
+      <DependentUpon>ConsultaGeneralActivocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Correos\Correos.resx">
+      <DependentUpon>Correos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Responsivas.resx">
+      <DependentUpon>Responsivas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Soporte\HistorialSoporte.resx">
+      <DependentUpon>HistorialSoporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Soporte\TableroSoporteTecnico.resx">
+      <DependentUpon>TableroSoporteTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Usuarios\UsuarioActivos.resx">
+      <DependentUpon>UsuarioActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Usuarios\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\consultaEmpleadoResponsivaActivo.resx">
+      <DependentUpon>consultaEmpleadoResponsivaActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vdlp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Control de sistemas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vdlpicono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel2019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-registrados.png" />
+    <None Include="Resources\ServidorOff.png" />
+    <None Include="Resources\configuracion.png" />
+    <Content Include="vdlp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modulos\Activos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
